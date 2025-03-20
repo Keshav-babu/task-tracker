@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { useSelector } from "react-redux"
-import type { RootState } from "@/lib/store"
+
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 import Header from "./header"
@@ -12,7 +12,6 @@ import TaskStats from "./task-stats"
 import TimeTrackingReport from "./time-tracking-report"
 
 export default function Dashboard() {
-  const { user } = useSelector((state: RootState) => state.auth)
   const [activeTab, setActiveTab] = useState("tasks")
   const [isCreatingTask, setIsCreatingTask] = useState(false)
   const [editingTask, setEditingTask] = useState<any>(null)

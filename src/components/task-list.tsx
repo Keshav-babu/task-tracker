@@ -35,7 +35,7 @@ export default function TaskList({ onEditTask }: TaskListProps) {
   const [selectedTask, setSelectedTask] = useState<any>(null)
   const [manualTime, setManualTime] = useState("")
 
-  const isManager = user?.role === "manager"
+
 
   useEffect(() => {
     let result = [...tasks]
